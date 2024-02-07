@@ -1,5 +1,5 @@
 vowels: list[str] = ["a", "e", "i", "o", "u"]
-ciphertext: str = input("Null Cipher Ciphertext: ")
+ciphered: str = input("Null Cipher Ciphered: ")
 plaintextArr: list[str] = []
 
 def isAVowel(character: str) -> bool:
@@ -8,12 +8,12 @@ def isAVowel(character: str) -> bool:
 
 
 def main() -> None:
-    for index in range(len(ciphertext) - 1):
-        char = ciphertext[index]
-        #if isAVowel(ciphertext[index - 1]):
+    for index in range(len(ciphered) - 1):
+        char = ciphered[index]
+        #if isAVowel(ciphered[index - 1]):
           #break
         if isAVowel(char):
-            plaintextArr.extend([char, ciphertext[index + 1]])
+            plaintextArr.extend([char, ciphered[index + 1]])
 
 if __name__ == "__main__":
     main()
