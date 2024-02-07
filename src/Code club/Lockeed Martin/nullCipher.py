@@ -1,5 +1,5 @@
 vowels: list[str] = ["a", "e", "i", "o", "u"]
-ciphered: str = input("Null Cipher Ciphered: ")
+ciphered: str = input("Null Cipher Ciphered text: ")
 plaintextArr: list[str] = []
 
 def isAVowel(character: str) -> bool:
